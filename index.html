@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sorpresita :3</title>
+    <title>2° Aniversario</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="anime.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="heart"></div>
-      <h2>¿QUIERES SER MI NOVIA?</h2>
+      <h1>
+        ESPERO HACERTE FELIZ POR MUCHOS ANIVERSARIOS MAS.
+        <br />
+        TE AMO
+      </h1>
     </div>
-    <script src="anime.min.js"></script>
     <script>
       const container = document.querySelector(".container");
 
-      for (let index = 0; index <= 100; index++) {
+      for (let index = 0; index <= 50; index++) {
         const hearts = document.createElement("div");
         hearts.classList.add("heart");
         container.appendChild(hearts);
@@ -36,7 +40,7 @@
             return anime.random(1, 5);
           },
           easing: "easeInOutBack",
-          duration: 3000,
+          duration: 5000,
           delay: anime.stagger(10),
           complete: animateHearts,
         });
